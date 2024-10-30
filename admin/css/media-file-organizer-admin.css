@@ -1,0 +1,155 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.media-file-organizer #progress{
+    margin-top: 10px;
+}
+.media-file-organizer #progress #activity{
+    width: 99% ;
+    padding: 5px;
+    height: 100px;
+    border: 1px solid lightgrey;
+
+    background-color: #FFFFFF;
+    color: black;
+    box-shadow: #393b36  ;
+}
+.media-file-organizer #progress #status{
+    width: 99% ;
+    padding: 5px;
+    border: 1px solid lightgrey;
+
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: bold;
+    box-shadow: #393b36  ;
+}
+
+.media-file-organizer #progress #activity .message{
+    padding: 5px;
+}
+
+.media-file-organizer #progress #activity .message .time{
+    margin-right: 5px;
+    color: #0A246A;
+}
+
+.media-file-organizer #activity .message .error{
+    color: red;
+}
+.media-file-organizer .folder, .media-file-organizer .file {
+    cursor: pointer;
+    width:100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.media-file-organizer .folder img, .media-file-organizer .file img {
+    width: 45px;
+    height: 45px;
+}
+
+.media-file-organizer#panels {
+    width: 99%;
+    padding: 10px;
+}
+.media-file-organizer .panel{
+    width: 100%;
+}
+
+.media-file-organizer .panel.wait *{
+    cursor: wait;
+}
+.media-file-organizer .panel .list-item{
+    height: 35px;
+    font-size: 18px;
+}
+
+.media-file-organizer .panel .list-item .file {
+    font-size: 14px;
+}
+.media-file-organizer #left_panel_container,
+.media-file-organizer #right_panel_container,
+.media-file-organizer #buttons_container {
+    vertical-align: top ;
+
+}
+
+.media-file-organizer #left_panel_container, .media-file-organizer #right_panel_container{
+    width: 47.5%;
+}
+.media-file-organizer #buttons_container {
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.media-file-organizer #panel_actions > td {
+    padding: 4px;
+}
+.media-file-organizer .dir-text{
+    width: 100%;
+}
+
+.media-file-organizer .up, .media-file-organizer .new, .media-file-organizer .select-all, .media-file-organizer .deselect-all{
+    background-repeat: no-repeat;
+    background-position: 3px 13px;
+    background-size: 29px;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+.media-file-organizer .up{
+    background-image: url(../../images/orig/dir_up.png);
+}
+.media-file-organizer .new {
+    background-image: url(../../images/orig/dir_new.png);
+}
+
+.media-file-organizer .select-all, .media-file-organizer .deselect-all {
+    font-size: 0.6rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    height: 20px !important;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.media-file-organizer .panel-list{
+    vertical-align: top;
+}
+
+.media-file-organizer .scrollable {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 800px;
+}
+
+.media-file-organizer .move_left, .media-file-organizer .move_right {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.media-file-organizer .move_left{
+    background-image: url(../../images/left.png);
+}
+
+.media-file-organizer .move_right{
+    background-image: url(../../images/right.png);
+}
